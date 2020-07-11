@@ -1,5 +1,7 @@
 package com.sda.javagdy4.designpatterns.builder;
 
+import com.sda.javagdy4.designpatterns.singleton.Configuration;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,5 +22,7 @@ public class Main {
 
         List<Bohater> bohaterList = new ArrayList<>();
         bohaterList.add(builder.createBohater());
+
+
     }
 }
