@@ -1,5 +1,8 @@
 package com.sda.javagdy4.designpatterns.builder;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
         Bohater.BohaterBuilder builder = new Bohater.BohaterBuilder();
@@ -15,5 +18,7 @@ public class Main {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append("oiajwd").append("awifhg");
 
+        List<Bohater> bohaterList = new ArrayList<>();
+        bohaterList.add(builder.createBohater());
     }
 }

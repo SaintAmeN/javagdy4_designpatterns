@@ -7,7 +7,6 @@ public class Bohater {
     private int wiek, wzrost, rozmiarButa, waga, obwodGlowy;
     private boolean zyje, siedzi, zonaty, ukonczylStudia, maPrace;
 
-
     private Bohater(String imie, String nazwisko, String imieOjca, String imieMatki, String imiePsa, String imieKota, int wiek, int wzrost, int rozmiarButa, int waga, int obwodGlowy, boolean zyje, boolean siedzi, boolean zonaty, boolean ukonczylStudia, boolean maPrace) {
         this.imie = imie;
         this.nazwisko = nazwisko;
@@ -28,6 +27,7 @@ public class Bohater {
     }
 
     public static class BohaterBuilder {
+
         private String imie;
         private String nazwisko;
         private String imieOjca;
