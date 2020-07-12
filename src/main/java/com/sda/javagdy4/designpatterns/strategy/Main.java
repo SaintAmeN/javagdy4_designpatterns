@@ -9,6 +9,8 @@ public class Main {
 
         String komenda;
 
+//        metoda(scanner);
+
         do {
             komenda = scanner.nextLine();
 
@@ -19,6 +21,12 @@ public class Main {
             }
 
         } while (!komenda.equalsIgnoreCase("quit"));
+    }
+
+    private static void metoda(Scanner scanner) {
+        System.out.println("Podaj liczbe:");
+        int liczba = scanner.nextInt();
+        System.out.println("Twoja liczba to: " + liczba);
     }
 
     private static void obslugaWypisu(Drukarka drukarka, String tekstDoDruku) {

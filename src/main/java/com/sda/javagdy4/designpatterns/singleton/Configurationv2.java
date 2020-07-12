@@ -15,6 +15,20 @@ public class Configurationv2 {
     private int aTerazWartoscLiczbowa;
     private int maxDlugoscNazwiska;
 
+//    W pelni bezpieczna wielowatkowo implementacja lazy singleton
+//    private final static Object lock = new Object();
+//    public synchronized static Configurationv2 getINSTANCE() {
+//        if(INSTANCE == null){
+//            synchronized (lock) {
+//                if(INSTANCE == null) {
+//                    INSTANCE = new Configurationv2();
+//                }
+//            }
+//        }
+//        return INSTANCE;
+//    }
+//
+
     public static Configurationv2 getINSTANCE() {
         if(INSTANCE == null){
             INSTANCE = new Configurationv2();
